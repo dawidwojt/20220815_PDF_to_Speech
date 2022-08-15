@@ -6,6 +6,7 @@ file_to_translate = input("Please type file name that you want to convert: ")
 if file_to_translate[-4:] != '.pdf': # if user did not include '.pdf', it'll be added automatically
     file_to_translate += '.pdf'
     print(file_to_translate)
+    
 
 pdf_file_obj = open(file_to_translate, 'rb')
 pdf_reader = PyPDF2.PdfFileReader(pdf_file_obj)
